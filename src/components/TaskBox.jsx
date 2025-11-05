@@ -14,7 +14,7 @@ export const TaskBox = ({ data }) => {
             key={data.id}
         >
             <div className='font-bold'>{data?.title.toUpperCase()}</div>
-            <div className=''>{data?.description}</div>
+            <div className='overflow-hidden'>{data?.description}</div>
             <div className={`${data.status == "pending" ? "bg-amber-500" : " bg-green-500"} p-1 rounded-md`}>{data.status}</div>
             <div className='w-full flex justify-around'>
                 <div className='bg-red-500 rounded-md p-1'
